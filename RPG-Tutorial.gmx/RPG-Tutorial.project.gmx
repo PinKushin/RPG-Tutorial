@@ -8,6 +8,10 @@
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
     <sprite>sprites\sWall</sprite>
+    <sprite>sprites\sPlayerDown</sprite>
+    <sprite>sprites\sPlayerRight</sprite>
+    <sprite>sprites\sPlayerLeft</sprite>
+    <sprite>sprites\sPlayerUp</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
