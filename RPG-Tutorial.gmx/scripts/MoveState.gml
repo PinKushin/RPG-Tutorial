@@ -1,7 +1,14 @@
 ///MoveState
 
+
+if DashKey
+{
+    State = DashState
+    alarm[0] = room_speed / 6
+}
+
 //Get direction
-var Dir = point_direction (0, 0, Xaxis, Yaxis);
+Dir = point_direction (0, 0, Xaxis, Yaxis);
 
 //Get the Length (Len)
 if Xaxis == 0 && Yaxis == 0

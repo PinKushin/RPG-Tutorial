@@ -20,11 +20,13 @@
   <scripts name="scripts">
     <script>scripts\GetInput.gml</script>
     <script>scripts\MoveState.gml</script>
+    <script>scripts\DashState.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>
     <object>objects\oWall</object>
     <object>objects\oView</object>
+    <object>objects\oDashEffect</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
