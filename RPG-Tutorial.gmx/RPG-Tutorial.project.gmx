@@ -26,11 +26,24 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\GetInput.gml</script>
-    <script>scripts\MoveState.gml</script>
-    <script>scripts\DashState.gml</script>
-    <script>scripts\AttackState.gml</script>
-    <script>scripts\GetFace.gml</script>
+    <scripts name="Player States">
+      <script>scripts\DashState.gml</script>
+      <script>scripts\AttackState.gml</script>
+      <script>scripts\MoveState.gml</script>
+    </scripts>
+    <scripts name="Helpers">
+      <script>scripts\GetFace.gml</script>
+      <script>scripts\GetInput.gml</script>
+    </scripts>
+    <scripts name="Enemy States">
+      <script>scripts\EnemyIdleState.gml</script>
+      <script>scripts\EnemyWanderState.gml</script>
+      <script>scripts\EnemyChaseState.gml</script>
+      <scripts name="Enemy Helpers">
+        <script>scripts\EnemyChooseNextState.gml</script>
+        <script>scripts\CheckForPlayer.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>

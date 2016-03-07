@@ -1,0 +1,2 @@
+///EnemyIdleState
+CheckForPlayer ()
