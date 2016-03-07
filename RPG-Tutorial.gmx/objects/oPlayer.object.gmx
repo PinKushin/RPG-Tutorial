@@ -39,6 +39,7 @@ Len = 0
 Dir = 0
 State = MoveState
 Attacked = false
+Face = RIGHT
 </string>
           </argument>
         </arguments>

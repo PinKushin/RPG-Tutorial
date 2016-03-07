@@ -30,6 +30,7 @@
     <script>scripts\MoveState.gml</script>
     <script>scripts\DashState.gml</script>
     <script>scripts\AttackState.gml</script>
+    <script>scripts\GetFace.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlayer</object>

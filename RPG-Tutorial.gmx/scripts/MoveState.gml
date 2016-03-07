@@ -24,6 +24,7 @@ if Xaxis == 0 && Yaxis == 0
 else
 {
     Len = Basespeed
+    GetFace ()
 }
 
 //Get the Hspeed and Vspeed
@@ -42,22 +43,21 @@ if Len == 0
     image_index = 0
 }
 
-//Vertical Sprites
-if Vspeed > 0
+switch Face
 {
-    sprite_index = sPlayerDown
-}
-else if Vspeed < 0
-{
-    sprite_index = sPlayerUp
-}
-
-//Horizontal Sprites
-if Hspeed > 0
-{
-    sprite_index = sPlayerRight
-}
-else if Hspeed < 0
-{
-    sprite_index = sPlayerLeft
+    case RIGHT:
+         sprite_index = sPlayerRight
+         break;
+    
+    case LEFT:
+         sprite_index = sPlayerLeft
+         break;
+    
+    case UP:
+         sprite_index = sPlayerUp
+         break;
+    
+    case DOWN:
+         sprite_index = sPlayerDown
+         break;
 }
