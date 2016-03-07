@@ -12,6 +12,7 @@
     <sprite>sprites\sPlayerLeft</sprite>
     <sprite>sprites\sPlayerUp</sprite>
     <sprite>sprites\sPlayerShadow</sprite>
+    <sprite>sprites\sSlime</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bGrass</background>
@@ -27,6 +28,8 @@
     <object>objects\oWall</object>
     <object>objects\oView</object>
     <object>objects\oDashEffect</object>
+    <object>objects\oSlime</object>
+    <object>objects\oLifeformParent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
