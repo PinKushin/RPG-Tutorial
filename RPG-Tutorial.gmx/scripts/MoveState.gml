@@ -7,6 +7,12 @@ if DashKey
     alarm[0] = room_speed / 6
 }
 
+if AttackKey
+{
+    image_index = 0
+    State = AttackState
+}
+
 //Get direction
 Dir = point_direction (0, 0, Xaxis, Yaxis);
 
