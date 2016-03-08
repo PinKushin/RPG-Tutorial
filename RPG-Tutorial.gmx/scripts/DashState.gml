@@ -1,4 +1,8 @@
 ///DashState
+if Len == 0 
+{
+    Dir = Face * 90
+}
 Len = Basespeed * 4
 
 //Get the Hspeed and Vspeed

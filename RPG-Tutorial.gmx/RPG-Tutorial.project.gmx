@@ -54,6 +54,7 @@
     <object>objects\oSlime</object>
     <object>objects\oLifeformParent</object>
     <object>objects\oDamage</object>
+    <object>objects\oPlayerStats</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
