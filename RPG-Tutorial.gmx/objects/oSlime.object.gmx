@@ -28,7 +28,7 @@
             <string>///Initialise the Slime
 event_inherited ()
 image_speed = 0.1
-Basespeed = 0.5
+Basespeed = 1
 State = EnemyIdleState
 alarm[0] = room_speed * irandom_range (2, 5)
 Sight = 64
