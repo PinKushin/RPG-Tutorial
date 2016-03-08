@@ -60,6 +60,49 @@ instance_destroy ()
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="oSpeaker">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Activate Dialog
+with other
+{
+    if !instance_exists (Dialog)
+    {
+        Dialog = instance_create (x + Xoffset, y + Yoffset, oDialog);
+        Dialog.Text = Text;
+    }
+    else
+    {
+        Dialog.TextPage++;
+        Dialog.TextCount = 0;
+        if Dialog.TextPage &gt; array_length_1d (Dialog.Text) - 1
+        {
+            with Dialog
+            {
+                instance_destroy ();
+            }
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="oLifeformParent">
       <action>
         <libid>1</libid>

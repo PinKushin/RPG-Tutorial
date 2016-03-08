@@ -23,6 +23,8 @@
     <sprite>sprites\sDamage</sprite>
     <sprite>sprites\sExpr</sprite>
     <sprite>sprites\sHealth</sprite>
+    <sprite>sprites\sSign</sprite>
+    <sprite>sprites\sDialog</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bGrass</background>
@@ -62,6 +64,9 @@
     <object>objects\oExpr</object>
     <object>objects\oHealth</object>
     <object>objects\oDoor</object>
+    <object>objects\oSpeaker</object>
+    <object>objects\oDialog</object>
+    <object>objects\oSign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
