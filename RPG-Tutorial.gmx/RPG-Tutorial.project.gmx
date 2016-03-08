@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sWall</sprite>
+    <sprite>sprites\sDoor</sprite>
     <sprites name="Player">
       <sprite>sprites\sPlayerUp</sprite>
       <sprite>sprites\sPlayerLeft</sprite>
@@ -57,9 +58,11 @@
     <object>objects\oDamage</object>
     <object>objects\oPlayerStats</object>
     <object>objects\oExpr</object>
+    <object>objects\oDoor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
+    <room>rooms\rArea2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -52,29 +52,18 @@
   </views>
   <instances>
     <instance objName="oWall" x="0" y="0" name="inst_FF71EB77" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="0" y="0" name="inst_EF7D512C" locked="0" code="" scaleX="19.6129035949707" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="416" y="352" name="inst_D23668B8" locked="0" code="" scaleX="2" scaleY="-6" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="192" y="0" name="inst_C1213033" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer" x="320" y="160" name="inst_00D1C481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="96" y="0" name="inst_EF7D512C" locked="0" code="" scaleX="17" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oView" x="320" y="96" name="inst_65FB1F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="0" y="320" name="inst_71C6B8A1" locked="0" code="" scaleX="17" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="608" y="0" name="inst_3BBBFDE3" locked="0" code="" scaleX="1" scaleY="11.3548383712769" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="0" y="320" name="inst_71C6B8A1" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="608" y="0" name="inst_3BBBFDE3" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="512" y="192" name="inst_BDBCF490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="352" y="256" name="inst_07280639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="64" y="96" name="inst_63ADB5D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayerStats" x="352" y="96" name="inst_333E6B52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="544" y="256" name="inst_1261C103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="544" y="96" name="inst_25A9F969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="96" y="224" name="inst_A75B36C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="576" y="128" name="inst_1FB9E035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="96" y="128" name="inst_8AB339D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="160" y="96" name="inst_BC25C8CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="96" y="64" name="inst_A6B2F8D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="128" y="128" name="inst_01B1ABBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="64" y="160" name="inst_F09B3425" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="544" y="192" name="inst_D6632090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSlime" x="512" y="128" name="inst_120BE941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoor" x="576" y="341" name="inst_E6E5B36D" locked="0" code="NewRoom = rArea2&#xA;NewX = 64&#xA;NewY = 36" scaleX="2.0625" scaleY="1.3125" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="64" y="12" name="inst_22DDA7F7" locked="0" code="NewRoom = rArea1&#xA;NewX = room_width - 64&#xA;NewY = room_height - 52&#xA;" scaleX="2" scaleY="1.28125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
