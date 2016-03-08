@@ -1,10 +1,12 @@
 ///MoveState
 
 
-if DashKey
+if DashKey && oPlayerStats.Stamina >= DASHCOST
 {
     State = DashState
     alarm[0] = room_speed / 6
+    oPlayerStats.Stamina -= DASHCOST
+    oPlayerStats.alarm[0] = room_speed
 }
 
 if AttackKey

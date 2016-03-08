@@ -83,7 +83,14 @@ if other.id != Creator
     other.HP -= Damage
     
     //Apply Knockback
-    var Dir = point_direction (Creator.x, Creator.y, other.x, other.y)
+    if instance_exists (Creator)
+    {
+        var Dir = point_direction (Creator.x, Creator.y, other.x, other.y)
+    }
+    else
+    {
+        var Dir = point_direction (x, y, other.x, other.y)
+    }
     var Xforce = lengthdir_x (Knockback, Dir)
     var Yforce = lengthdir_y (Knockback, Dir)
     with other
@@ -113,13 +120,20 @@ if other.id != Creator
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Damage all Lifeforms
+            <string>///Damage Player
 if other.id != Creator
 {
     oPlayerStats.HP -= Damage
     
     //Apply Knockback
-    var Dir = point_direction (Creator.x, Creator.y, other.x, other.y)
+    if instance_exists (Creator)
+    {
+        var Dir = point_direction (Creator.x, Creator.y, other.x, other.y)
+    }
+    else
+    {
+        var Dir = point_direction (x, y, other.x, other.y)
+    }
     var Xforce = lengthdir_x (Knockback, Dir)
     var Yforce = lengthdir_y (Knockback, Dir)
     with other
