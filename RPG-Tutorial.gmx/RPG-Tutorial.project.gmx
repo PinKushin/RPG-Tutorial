@@ -20,6 +20,7 @@
     </sprites>
     <sprite>sprites\sSlime</sprite>
     <sprite>sprites\sDamage</sprite>
+    <sprite>sprites\sExpr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bGrass</background>
@@ -55,6 +56,7 @@
     <object>objects\oLifeformParent</object>
     <object>objects\oDamage</object>
     <object>objects\oPlayerStats</object>
+    <object>objects\oExpr</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>

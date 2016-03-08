@@ -49,5 +49,6 @@ if image_index >= 3 && Attacked == false
     }
     var Damage = instance_create (XX, YY, oDamage);
     Damage.Creator = id
+    Damage.Damage = oPlayerStats.Attack
     Attacked = true
 }

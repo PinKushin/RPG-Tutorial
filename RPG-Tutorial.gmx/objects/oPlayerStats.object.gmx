@@ -30,7 +30,11 @@ HP = 5
 MaxHP = HP
 Stamina = 10
 MaxStamina = Stamina
+Expr = 0
+MaxExpr = 3
 Level = 1
+Attack = 1
+
 
 </string>
           </argument>
