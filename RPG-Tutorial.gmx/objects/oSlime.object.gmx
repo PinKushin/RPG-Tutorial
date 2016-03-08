@@ -58,6 +58,12 @@ TargetY = 0
             <kind>1</kind>
             <string>///Create Experience
 instance_create (x, y, oExpr)
+
+//Drop Health Pack
+if Chance (0.5)
+{
+    instance_create (x + random_range(-4, 4), y + random_range (-4, 4), oHealth)
+}
 </string>
           </argument>
         </arguments>

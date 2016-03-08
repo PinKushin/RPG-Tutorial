@@ -22,6 +22,7 @@
     <sprite>sprites\sSlime</sprite>
     <sprite>sprites\sDamage</sprite>
     <sprite>sprites\sExpr</sprite>
+    <sprite>sprites\sHealth</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bGrass</background>
@@ -36,6 +37,7 @@
     <scripts name="Helpers">
       <script>scripts\GetFace.gml</script>
       <script>scripts\GetInput.gml</script>
+      <script>scripts\Chance.gml</script>
     </scripts>
     <scripts name="Enemy States">
       <script>scripts\EnemyIdleState.gml</script>
@@ -58,6 +60,7 @@
     <object>objects\oDamage</object>
     <object>objects\oPlayerStats</object>
     <object>objects\oExpr</object>
+    <object>objects\oHealth</object>
     <object>objects\oDoor</object>
   </objects>
   <rooms name="rooms">
