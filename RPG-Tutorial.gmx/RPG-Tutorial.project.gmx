@@ -37,6 +37,7 @@
     </scripts>
     <scripts name="Enemy States">
       <script>scripts\EnemyIdleState.gml</script>
+      <script>scripts\EnemyStallState.gml</script>
       <script>scripts\EnemyWanderState.gml</script>
       <script>scripts\EnemyChaseState.gml</script>
       <scripts name="Enemy Helpers">
