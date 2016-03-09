@@ -68,10 +68,13 @@
     <object>objects\oSpeaker</object>
     <object>objects\oDialog</object>
     <object>objects\oSign</object>
+    <object>objects\oInput</object>
+    <object>objects\oPauseMenu</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
     <room>rooms\rArea2</room>
+    <room>rooms\rPause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

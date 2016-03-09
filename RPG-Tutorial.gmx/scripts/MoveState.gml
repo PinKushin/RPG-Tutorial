@@ -1,7 +1,7 @@
 ///MoveState
 
 
-if DashKey
+if oInput.DashKey
 {
     var Xdir = lengthdir_x (8, Face * 90);
     var Ydir = lengthdir_y (8, Face * 90);
@@ -39,17 +39,17 @@ if DashKey
     }
 }
 
-if AttackKey
+if oInput.AttackKey
 {
     image_index = 0
     State = AttackState
 }
 
 //Get direction
-Dir = point_direction (0, 0, Xaxis, Yaxis);
+Dir = point_direction (0, 0, oInput.Xaxis, oInput.Yaxis);
 
 //Get the Length (Len)
-if Xaxis == 0 && Yaxis == 0
+if oInput.Xaxis == 0 && oInput.Yaxis == 0
 {
     Len = 0
 }

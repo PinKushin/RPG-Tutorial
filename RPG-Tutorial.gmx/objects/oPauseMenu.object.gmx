@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,17 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialise Player Stats
-HP = 5
-MaxHP = HP
-Stamina = 10
-MaxStamina = Stamina
-Expr = 0
-MaxExpr = 3
-Level = 1
-Attack = 1
-draw_set_color (c_white)
+            <string>///Initialise Pause Menu
+Title = "Game Paused"
 
+Option[0] = "Return"
+Option[1] = "Save"
+Option[2] = "Load"
+Option[3] = "Quit"
+
+//Menu Index
+MenuIndex = 0
 </string>
           </argument>
         </arguments>
@@ -58,7 +57,7 @@ draw_set_color (c_white)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Stamina Regen Alarm
+            <string>///Menu Alarm
 </string>
           </argument>
         </arguments>
@@ -81,16 +80,34 @@ draw_set_color (c_white)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Control the Stats
-if HP &lt; 0
+            <string>///Control the Menu
+if alarm[0] &lt;= 0
 {
-    HP = 0
-}
-
-//Stamina Regen
-if Stamina &lt; MaxStamina &amp;&amp; alarm[0] == -1
-{
-    Stamina++
+    if oInput.DownKey
+    {
+        if MenuIndex &lt; array_length_1d (Option) - 1
+        {
+            MenuIndex++
+        }
+        else
+        {
+            MenuIndex = 0
+        }
+        alarm[0] = room_speed / 6
+    }
+    
+    if oInput.UpKey
+    {
+        if MenuIndex &gt; 0 
+        {
+            MenuIndex--
+        }
+        else
+        {
+            MenuIndex = array_length_1d (Option) - 1
+        }
+        alarm[0] = room_speed / 6
+    }
 }
 </string>
           </argument>
@@ -114,10 +131,25 @@ if Stamina &lt; MaxStamina &amp;&amp; alarm[0] == -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw the Stats
-draw_text (32, 16, "Health: " + string (HP) + "/" + string (MaxHP))
-draw_text (32, 32, "Stamina: " + string (Stamina) + "/" + string (MaxStamina))
-draw_text (32, 48, "Level: " + string (Level))
+            <string>///Draw the Menu
+var XX = display_get_gui_width () / 2;
+var YY = display_get_gui_height () / 2;
+draw_set_halign (fa_center)
+
+draw_text (XX, YY - 64, Title)
+
+for (var i = 0; i &lt;= array_length_1d (Option) - 1; i++)
+{
+    draw_set_color (c_gray)
+    if i == MenuIndex
+    {
+        draw_set_color (c_white)
+    }
+    draw_text (XX, YY + (i * 32), Option[i])
+}
+draw_set_color (c_white)
+draw_set_halign (fa_left)
+
 </string>
           </argument>
         </arguments>
