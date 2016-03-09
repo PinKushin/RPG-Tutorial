@@ -57,11 +57,34 @@ Margin = 8;
           <argument>
             <kind>1</kind>
             <string>///Draw the Dialog
-TextCount += Speed;
+
+//Get the last space
+if string_char_at (Text[TextPage], TextCount) == " "
+{
+    LastSpace = TextCount
+}
+
+//Add smart returns
+var TextWords = StringCopyWords (Text[TextPage], 1, TextCount);
+if string_width (TextWords) &gt;= Width - (Margin * 2)
+{
+    //Remove the space
+    Text[TextPage] = string_delete (Text[TextPage], LastSpace, 1)
+    //Add a return
+    Text[TextPage] = string_insert ("#", Text[TextPage], LastSpace)
+}
+//Get the Visible Text
 TextVisible = string_copy (Text[TextPage], 0, TextCount);
+
+//Update the Text location
 var XX = (x - view_xview[0]) * DisplayScale;
-var YY = (y - view_wview[0]) * DisplayScale;
+var YY = (y - view_yview[0]) * DisplayScale;
+
+//Draw the Text
 draw_text_ext (XX + Margin, YY + Margin, TextVisible, -1, Width - (Margin * 2));
+
+//Add to the count
+TextCount += Speed;
 </string>
           </argument>
         </arguments>

@@ -32,9 +32,9 @@ Dialog = noone;
 TextPage = 0;
 Xoffset = -32;
 Yoffset = -40;
-Text[0] ="Warning: Slimes ahead.";
-Text[1] ="Proceed with caution.";
-Text[2] ="If you go, you will surely die.";
+Text[0] = "Warning: Slimes ahead.";
+Text[1] = "Proceed with caution.";
+Text[2] = "If you go, you will surely die.";
 </string>
           </argument>
         </arguments>

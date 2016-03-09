@@ -3,8 +3,8 @@
   <caption></caption>
   <width>640</width>
   <height>360</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -53,8 +53,8 @@
   <instances>
     <instance objName="oWall" x="0" y="0" name="inst_FF71EB77" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="0" y="0" name="inst_EF7D512C" locked="0" code="" scaleX="19.6129035949707" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="416" y="352" name="inst_D23668B8" locked="0" code="" scaleX="2" scaleY="-6" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="192" y="0" name="inst_C1213033" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="416" y="336" name="inst_D23668B8" locked="0" code="" scaleX="2" scaleY="-6" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="184" y="24" name="inst_C1213033" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer" x="320" y="160" name="inst_00D1C481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oView" x="320" y="96" name="inst_65FB1F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oWall" x="0" y="320" name="inst_71C6B8A1" locked="0" code="" scaleX="17" scaleY="2" colour="4294967295" rotation="0"/>

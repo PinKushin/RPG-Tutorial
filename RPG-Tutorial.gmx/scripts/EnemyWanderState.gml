@@ -7,7 +7,7 @@ if point_distance (x, y, TargetX, TargetY) > Basespeed
     var Hspd = lengthdir_x (Basespeed, Dir);
     var Vspd = lengthdir_y (Basespeed, Dir);
     
-    if Hsp != 0 
+    if Hspd != 0 
     {
         image_xscale = sign (Hspd)
     }
