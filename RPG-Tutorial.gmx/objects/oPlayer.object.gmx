@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-10</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>oLifeformParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -253,6 +253,7 @@ if State == AttackState
             <kind>1</kind>
             <string>///Set Fixed Rotation
 phy_fixed_rotation = true
+persistent = true
 </string>
           </argument>
         </arguments>

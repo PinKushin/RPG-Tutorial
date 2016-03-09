@@ -113,6 +113,7 @@ if alarm[0] &lt;= 0
         switch (MenuIndex)
         {
             case 0:
+                 RoomStartAction = RETURN
                  room_goto (oPlayerStats.PrevRoom)
                  break;
                  
@@ -121,7 +122,8 @@ if alarm[0] &lt;= 0
                  break;
             
             case 2:
-                 LoadGame ()
+                 oPlayerStats.RoomStartAction = LOAD
+                 room_goto (oPlayerStats.PrevRoom)
                  break;
             
             case 3:

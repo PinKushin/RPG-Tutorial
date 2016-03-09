@@ -36,7 +36,22 @@ Level = 1
 Attack = 1
 draw_set_color (c_white)
 
+//Get the player's start position
+if instance_exists (oPlayer)
+{
+    PlayerXStart = oPlayer.x
+    PlayerYStart = oPlayer.y
+}
+else
+{
+    PlayerXStart = 0
+    PlayerYStart = 0
+}
+
+//Save the Previous Room
 PrevRoom = room
+
+RoomStartAction = NEWROOM
 
 </string>
           </argument>
@@ -105,6 +120,7 @@ if oInput.PauseKey
             oPlayer.persistent = false
         }
         PrevRoom = room
+        room_persistent = true
         room_goto (rPause)
     }
     else
@@ -113,6 +129,53 @@ if oInput.PauseKey
     }
     oInput.PauseKey = false
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Remember the Player's start position
+if room == rPause
+{
+    exit
+}
+switch (RoomStartAction)
+{
+    case RETURN:
+         break;
+    
+    case NEWROOM:
+    default:
+            if instance_exists (oPlayer)
+            {
+                PlayerXStart = oPlayer.x
+                PlayerYStart = oPlayer.y
+            }
+            break;
+    
+    case LOAD:
+         LoadGame ()
+         break;
+}
+room_persistent = false
+RoomStartAction = NEWROOM
 </string>
           </argument>
         </arguments>

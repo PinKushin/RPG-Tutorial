@@ -15,8 +15,8 @@ var SaveData = ds_map_create ();
 with oPlayerStats
 {
     SaveData[? "room"] = PrevRoom
-    SaveData[? "x"] = 0
-    SaveData[? "y"] = 0
+    SaveData[? "x"] = PlayerXStart
+    SaveData[? "y"] = PlayerYStart
     SaveData[? "HP"] = HP
     SaveData[? "MaxHP"] = MaxHP
     SaveData[? "Stamina"] = Stamina

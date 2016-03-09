@@ -6,8 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sWall</sprite>
-    <sprite>sprites\sDoor</sprite>
     <sprites name="Player">
       <sprite>sprites\sPlayerUp</sprite>
       <sprite>sprites\sPlayerLeft</sprite>
@@ -19,12 +17,14 @@
       <sprite>sprites\sPlayerAttackDown</sprite>
       <sprite>sprites\sPlayerDown</sprite>
     </sprites>
-    <sprite>sprites\sSlime</sprite>
     <sprite>sprites\sDamage</sprite>
+    <sprite>sprites\sDialog</sprite>
+    <sprite>sprites\sDoor</sprite>
     <sprite>sprites\sExpr</sprite>
     <sprite>sprites\sHealth</sprite>
     <sprite>sprites\sSign</sprite>
-    <sprite>sprites\sDialog</sprite>
+    <sprite>sprites\sSlime</sprite>
+    <sprite>sprites\sWall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bGrass</background>
@@ -56,22 +56,22 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\oPlayer</object>
-    <object>objects\oWall</object>
-    <object>objects\oView</object>
-    <object>objects\oDashEffect</object>
-    <object>objects\oSlime</object>
-    <object>objects\oLifeformParent</object>
     <object>objects\oDamage</object>
-    <object>objects\oPlayerStats</object>
+    <object>objects\oDashEffect</object>
+    <object>objects\oDialog</object>
+    <object>objects\oDoor</object>
     <object>objects\oExpr</object>
     <object>objects\oHealth</object>
-    <object>objects\oDoor</object>
-    <object>objects\oSpeaker</object>
-    <object>objects\oDialog</object>
-    <object>objects\oSign</object>
     <object>objects\oInput</object>
+    <object>objects\oLifeformParent</object>
     <object>objects\oPauseMenu</object>
+    <object>objects\oPlayer</object>
+    <object>objects\oPlayerStats</object>
+    <object>objects\oSign</object>
+    <object>objects\oSlime</object>
+    <object>objects\oSpeaker</object>
+    <object>objects\oView</object>
+    <object>objects\oWall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rArea1</room>
