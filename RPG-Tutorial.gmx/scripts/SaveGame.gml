@@ -1,8 +1,6 @@
 ///SaveGame
 
-
-
-//Make sure Player exists
+//Make sure oPlayerStats exists
 if !instance_exists (oPlayerStats)
 {
     exit
@@ -35,7 +33,6 @@ SaveString = base64_encode (SaveString)
 var File = file_text_open_write (working_directory + "MySaveGame.txt");
 file_text_write_string (File, SaveString)
 file_text_close (File)
-show_message ("Game Saved")
 
 
 
