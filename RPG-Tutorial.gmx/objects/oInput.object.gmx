@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>///Initialise Input
 GetInput ()
-PrevRoom = room
 
 </string>
           </argument>
@@ -53,24 +52,6 @@ PrevRoom = room
             <kind>1</kind>
             <string>///Get the Input
 GetInput ()
-
-//Pause the game
-if PauseKey
-{
-    if room != rPause
-    {
-        if instance_exists (oPlayer)
-        {
-            oPlayer.persistent = false
-        }
-        PrevRoom = room
-        room_goto (rPause)
-    }
-    else
-    {
-        room_goto (PrevRoom)
-    }
-}
 
 </string>
           </argument>

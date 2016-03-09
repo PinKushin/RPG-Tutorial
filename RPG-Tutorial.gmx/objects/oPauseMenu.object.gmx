@@ -83,7 +83,7 @@ MenuIndex = 0
             <string>///Control the Menu
 if alarm[0] &lt;= 0
 {
-    if oInput.DownKey
+    if oInput.DownKey || oInput.Yaxis &gt; 0.5
     {
         if MenuIndex &lt; array_length_1d (Option) - 1
         {
@@ -96,7 +96,7 @@ if alarm[0] &lt;= 0
         alarm[0] = room_speed / 6
     }
     
-    if oInput.UpKey
+    if oInput.UpKey || oInput.Yaxis &lt; -0.5
     {
         if MenuIndex &gt; 0 
         {
@@ -107,6 +107,31 @@ if alarm[0] &lt;= 0
             MenuIndex = array_length_1d (Option) - 1
         }
         alarm[0] = room_speed / 6
+    }
+    if oInput.DashKey
+    {
+        switch (MenuIndex)
+        {
+            case 0:
+                 room_goto (oPlayerStats.PrevRoom)
+                 break;
+                 
+            case 1:
+                 SaveGame ()
+                 break;
+            
+            case 2:
+                 LoadGame ()
+                 break;
+            
+            case 3:
+                 game_end ()
+                 break;
+            
+            default:
+                    break;
+        }
+        oInput.DashKey = false
     }
 }
 </string>

@@ -36,6 +36,8 @@ Level = 1
 Attack = 1
 draw_set_color (c_white)
 
+PrevRoom = room
+
 </string>
           </argument>
         </arguments>
@@ -88,9 +90,28 @@ if HP &lt; 0
 }
 
 //Stamina Regen
-if Stamina &lt; MaxStamina &amp;&amp; alarm[0] == -1
+if Stamina &lt; MaxStamina &amp;&amp; alarm[0] == -1 &amp;&amp; room != rPause
 {
     Stamina++
+}
+
+//Pause the game
+if oInput.PauseKey
+{
+    if room != rPause
+    {
+        if instance_exists (oPlayer)
+        {
+            oPlayer.persistent = false
+        }
+        PrevRoom = room
+        room_goto (rPause)
+    }
+    else
+    {
+        room_goto (PrevRoom)
+    }
+    oInput.PauseKey = false
 }
 </string>
           </argument>

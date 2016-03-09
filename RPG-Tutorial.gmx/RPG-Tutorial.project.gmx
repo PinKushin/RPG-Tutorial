@@ -46,6 +46,8 @@
       <script>scripts\GetFace.gml</script>
       <script>scripts\GetInput.gml</script>
       <script>scripts\Chance.gml</script>
+      <script>scripts\SaveGame.gml</script>
+      <script>scripts\LoadGame.gml</script>
     </scripts>
     <scripts name="Player States">
       <script>scripts\DashState.gml</script>
