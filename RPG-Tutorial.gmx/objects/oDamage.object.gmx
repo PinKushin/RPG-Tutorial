@@ -60,7 +60,7 @@ instance_destroy ()
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oLifeformParent">
+    <event eventtype="4" ename="oPlayer">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -77,10 +77,10 @@ instance_destroy ()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Damage all Lifeforms
+            <string>///Damage Player
 if other.id != Creator
 {
-    other.HP -= Damage
+    oPlayerStats.HP -= Damage
     
     //Apply Knockback
     if instance_exists (Creator)
@@ -103,7 +103,7 @@ if other.id != Creator
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oPlayer">
+    <event eventtype="4" ename="oLifeformParent">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -120,10 +120,10 @@ if other.id != Creator
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Damage Player
+            <string>///Damage all Lifeforms
 if other.id != Creator
 {
-    oPlayerStats.HP -= Damage
+    other.HP -= Damage
     
     //Apply Knockback
     if instance_exists (Creator)

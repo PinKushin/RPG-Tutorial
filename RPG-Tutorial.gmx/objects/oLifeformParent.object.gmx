@@ -63,7 +63,7 @@ if HP &lt;= 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oLifeformParent">
+    <event eventtype="4" ename="oWall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -86,7 +86,7 @@ if HP &lt;= 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oWall">
+    <event eventtype="4" ename="oLifeformParent">
       <action>
         <libid>1</libid>
         <id>603</id>

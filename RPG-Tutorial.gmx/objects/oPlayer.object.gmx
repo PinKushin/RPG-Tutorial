@@ -100,35 +100,6 @@ if oPlayerStats.HP &lt;= 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="oDoor">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Go through the Door
-if room_exists (other.NewRoom)
-{
-    room_goto (other.NewRoom)
-    x = other.NewX
-    y = other.NewY
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="oHealth">
       <action>
         <libid>1</libid>
@@ -200,6 +171,35 @@ with oPlayerStats
         MaxStamina += 2
         Attack += 1
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="oDoor">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Go through the Door
+if room_exists (other.NewRoom)
+{
+    room_goto (other.NewRoom)
+    x = other.NewX
+    y = other.NewY
 }
 </string>
           </argument>
