@@ -3,8 +3,8 @@
   <caption></caption>
   <width>640</width>
   <height>360</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>-1</persistent>
@@ -52,18 +52,23 @@
   </views>
   <instances>
     <instance objName="oWall" x="0" y="0" name="inst_FF71EB77" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="96" y="0" name="inst_EF7D512C" locked="0" code="" scaleX="17" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="416" y="336" name="inst_D23668B8" locked="0" code="" scaleX="2" scaleY="-6" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="184" y="24" name="inst_C1213033" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="oView" x="320" y="96" name="inst_65FB1F78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="0" y="320" name="inst_71C6B8A1" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="oWall" x="608" y="0" name="inst_3BBBFDE3" locked="0" code="" scaleX="1" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="512" y="192" name="inst_BDBCF490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="352" y="256" name="inst_07280639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="544" y="256" name="inst_1261C103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="544" y="96" name="inst_25A9F969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="576" y="128" name="inst_1FB9E035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="544" y="192" name="inst_D6632090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSlime" x="512" y="128" name="inst_120BE941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoor" x="32" y="0" name="inst_22DDA7F7" locked="0" code="NewRoom = rArea1&#xA;NewX = room_width - 64&#xA;NewY = room_height - 52&#xA;" scaleX="2" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="0" y="320" name="inst_71C6B8A1" locked="0" code="" scaleX="17" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="608" y="0" name="inst_3BBBFDE3" locked="0" code="" scaleX="1" scaleY="11.3548383712769" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="544" y="320" name="inst_E6E5B36D" locked="0" code="NewRoom = rArea2&#xA;NewX = 64&#xA;NewY = 36" scaleX="2.06451606750488" scaleY="1.25" colour="4294967295" rotation="0"/>
+    <instance objName="oSign" x="88" y="72" name="inst_6370D4B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oWall" x="104" y="0" name="inst_94520DB7" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoor" x="32" y="0" name="inst_506F5A3A" locked="0" code="NewRoom = rHome&#xA;NewX = 72&#xA;NewY = 128&#xA;" scaleX="2.25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="312" y="208" name="inst_8546F5CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="296" y="272" name="inst_798CBB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="368" y="288" name="inst_3133BABD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="368" y="144" name="inst_EDAFFDB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="464" y="112" name="inst_1ADEDA34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="528" y="104" name="inst_8AA76AA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="560" y="208" name="inst_8E176DD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSlime" x="552" y="272" name="inst_845F6AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

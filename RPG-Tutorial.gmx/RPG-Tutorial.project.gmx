@@ -74,6 +74,7 @@
     <object>objects\oWall</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rHome</room>
     <room>rooms\rArea1</room>
     <room>rooms\rArea2</room>
     <room>rooms\rPause</room>
